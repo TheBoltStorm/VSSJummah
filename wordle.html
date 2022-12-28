@@ -1,0 +1,88 @@
+<HTML>
+
+<head>
+
+<title>Islamic Wordle</title>
+<link type="text/css" rel="stylesheet" href="wordle.css"/>
+<script src="wordle.js"></script>
+
+</head>
+<script>
+var input = document.getElementById("guess");
+input.addEventListener("keypress",(e)=> {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+	  alert("hello world");
+        document.getElementById("guessButton").click();
+    } else {
+		alert("bob");
+	}
+});
+
+</script>
+<body>
+<center> 
+
+<button class="button button1" onclick="window.location.href='Jummah Homepage.html'">HOME</button>
+<button class="button button4" onclick="window.location.href='Jummah aboutme.html'">ABOUT US</button>
+<button class="button button2" onclick="window.location.href='https://forms.gle/WzAD5UavrgNLjS2n6'">RSVP</button>
+<button class="button button3" onclick="window.location.href='wordle.html'">WORDLE</button>
+<button class="button button5"onclick="window.location.href='Jummah donations.html'">DONATIONS</button>
+<button class="button button7" onclick="window.location.href='Jummah faq.html'">FAQ</button>
+
+
+<h1>Islamic Wordle</h1>
+<h2>Power in Prayer</h2>
+</center>
+	<center>
+	<h3>This is a wordle with the answers being related to only Islam. Please click the guess button for your first guess then, you can use the enter button to submit a word.</h3>
+	<br>
+	<label>Please enter a word with five letters:</label>
+	<form>
+ 	<input type="text" id="guess">
+	<button id="guessButton" type="button" onclick="move();">Enter your word!</button>
+	</form>
+	<br>	
+	<p id="returnMessage"></p>
+	<p id="endMessage"></p>
+	<center>
+	<img id="A1", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="A2", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="A3", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="A4", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="A5", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<br>
+	<img id="B1", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="B2", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="B3", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="B4", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="B5", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<br>
+	<img id="C1", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="C2", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="C3", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="C4", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="C5", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<br>
+	<img id="D1", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="D2", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="D3", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="D4", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="D5", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<br>
+	<img id="E1", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="E2", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="E3", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="E4", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="E5", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<br>
+	<img id="F1", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="F2", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="F3", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="F4", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	<img id="F5", src="https://yt3.ggpht.com/ytc/AKedOLT2uHxcqihTHFJ5o0zUQipGt2CAnzCt-2UDS08qBg=s900-c-k-c0x00ffffff-no-rj", width=100px height=100px,></img>
+	</center>
+	</center>
+</body>
+
+</HTML>
